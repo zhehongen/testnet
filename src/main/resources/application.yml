@@ -6,3 +6,13 @@ spring:
   application:
     name: test-net
 timezone: UTC
+logging:
+  file: /applogs/iot-platform/iot-cmp.log
+  level:
+    root: INFO
+    org: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: debug
+    org.hibernate.type.descriptor.sql.BasicExtractor: debug
+    com: INFO
+    com.thingsmatrix: DEBUG
+  register-shutdown-hook: false
